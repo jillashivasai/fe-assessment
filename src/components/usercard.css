@@ -1,0 +1,161 @@
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5px;
+    width: 82vw;
+    margin-right: 20px;
+   border-top: none;
+   border-radius: 10px;
+   box-sizing: border-box;
+   justify-content: space-between;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.img-name{
+    display: flex;
+    align-items: flex-start;
+    align-self: flex-start;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    justify-content: space-between;
+    box-sizing: border-box;
+    
+}
+.img{
+    border-radius: 50%;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.border{
+    border: 1px solid darkgray;
+    
+}
+.bold{
+    font-weight: bold;
+}
+
+li{
+    list-style: none;
+    margin-top: 20px;
+    margin-left: 0px;
+}
+
+.textarea-field{
+    width: 100%;
+    display: block;
+    height: 80px;
+    font-size: 15px;
+
+}
+.row{
+    display: flex;
+    flex-direction: column;
+}
+.rows{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.input-field{
+    margin-top: 5px;
+    width: 20vw;
+    height: 3vh;
+    font-size: 15px;
+}
+.editing{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 5px;
+    width: 82vw;
+    margin-right: 20px;
+}
+
+.flex-end{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.save-button{
+    background-color: transparent;
+    border: none;
+    color: green;
+    font-size: 20px;
+    cursor: pointer;
+}
+.close{
+    background-color: transparent;
+    border: none;
+    color:red;
+    font-size: 20px;
+    cursor: pointer;
+}
+.delete-button{
+    background-color: transparent;
+    border: none;
+    color:red;
+    cursor: pointer;
+    font-size: 20px;
+}
+.edit-button{
+    background-color: transparent;
+    border: none;
+    color:blue;
+    font-size: 20px;
+    cursor: pointer;
+}
+.modal{
+    border: 1px solid lightgray;
+    width: 82vw;
+    border-radius: 10px;
+    padding-bottom: 5px;
+    padding-top: 0px;
+    padding: 5px;
+    margin-top: 10px;
+}
+.text-center{
+    text-align: center;
+    font-weight: 600;
+}
+.modal-buttons{
+    display: flex;
+    justify-content: center;
+}
+.modal-delete{
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    width: 70px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.modal-cancel{
+    background-color:transparent;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 3px;
+    width: 70px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+@media screen and (min-width:400px) {
+    .card{
+        width: 78.5vw;
+    }
+    .editing{
+        width: 78.5vw;
+        height: 280px;
+    }
+    
+}
