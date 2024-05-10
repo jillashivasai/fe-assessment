@@ -27,3 +27,7 @@
 .search:focus{
     outline: none;
 }
+.disabled{
+    color: rgb(179, 178, 178);
+    cursor:no-drop
+}

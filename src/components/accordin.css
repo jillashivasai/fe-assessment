@@ -9,6 +9,7 @@
     box-sizing: border-box;
     border-radius: 10px;
     margin-right: 20px;
+   
 }
 .accordion{
     display: flex;
@@ -22,6 +23,13 @@
 }
 .border-bottom{
     border-bottom: none;
+}
+
+.enabled{
+    cursor: pointer;
+    background-color: lightgray;
+    border-radius: 50%;
+    padding: 5px;
 }
 
 @media screen and (min-width:400px){
