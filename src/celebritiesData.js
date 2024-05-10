@@ -1,4 +1,4 @@
-[
+const celebritiesData=[
 	{
 		"id": 1,
 		"first": "Aidan",
@@ -220,3 +220,5 @@
 		"description": "This character description generator will generate a fairly random description of a belonging to Marjella Stuijt. However, some aspects of the descriptions will remain the same, this is done to keep the general structure the same, while still randomizing the important details of Marjella Stuijt."
 	}
 ]
+
+export default celebritiesData
