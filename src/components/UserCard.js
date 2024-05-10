@@ -29,6 +29,8 @@ const UserCard = ({ eachUser, onDelete }) => {
   const [isSaveEnabled, setIsSaveEnabled] = useState(false);
   const [originalDetails, setOriginalDetails] = useState({});
   const [disableToggle, setDisableToggle] = useState(false);
+  const [editedTitle, setEditedTitle] = useState(`${first} ${last}`);
+
 
   useEffect(() => {
     // Save the original user details when component mounts
@@ -107,6 +109,26 @@ const UserCard = ({ eachUser, onDelete }) => {
   function handleAccordionToggle(id) {
     setActiveId(activeId === id ? null : id);
   }
+
+  const handleTitleChange = (e) => {
+  setEditedTitle(e.target.value);
+};
+
+  const renderTitle = () => {
+  if (isEditing && age > 18) {
+    return (
+      <div>
+        <input
+          type="text"
+          value={editedTitle}
+          onChange={handleTitleChange}
+          className="title-input"
+        />
+      </div>
+    );
+  }
+  return editedTitle;
+};
 
   const renderEditing = () => {
     if (isEditing && age > 18) {
@@ -194,7 +216,7 @@ const UserCard = ({ eachUser, onDelete }) => {
   return (
     <li>
       <Accordion
-        title={`${first} ${last}`}
+        title={renderTitle()}
         image={picture}
         isOpen={activeId === id}
         onToggle={() => handleAccordionToggle(id)}
